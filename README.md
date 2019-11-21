@@ -14,3 +14,19 @@ end
 ```
 ## Using Capybara's DSL
  - Navigation is done using `visit "<URL>"`
+ - [Actions](https://rubydoc.info/github/teamcapybara/capybara/master/Capybara/Node/Actions):
+   - `fill_in [locator], with: "value"`: locator can be the  name, id, test_id attribute, placeholder, or label text
+   - `click_on [locator]` or `click_button [locator]`
+   - `choose [locator]`
+   - `check [locator]`
+   - `select "Option", from: [locator]`
+ - [Finders](https://rubydoc.info/github/teamcapybara/capybara/master/Capybara/Node/Finders):
+   - `find`
+   - `find_link`
+   - `find_button`
+ - [Querying](https://rubydoc.info/github/teamcapybara/capybara/master/Capybara/Node/Matchers):
+   - page.has_selector?('table tr')
+   - page.has_selector?(:xpath, './/table/tr')
+   - page.has_xpath?('.//table/tr')
+   - page.has_css?('table tr.foo')
+   - page.has_content?('foo')
