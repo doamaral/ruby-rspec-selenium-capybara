@@ -5,12 +5,14 @@ Incrementing test project with Capybara. Although Capybara is not required to au
 ## Initial project structure
 
 - Same basic steps from the [`ruby-rspec-selenium` Project](https://github.com/doamaral/ruby-rspec-selenium) until the `Writing first test script` Step
+- Add `gem 'capybara', '~> 3.29'` to the Gemfile
+- Run `bundle install` command to install all your gems
 - Add `require 'capybara/rspec'` and `config.include Capybara::DSL` to the `spec_helper.rb` file
 - Add basic Browser configurations through `Capybara.configure do |config|`
 
 ```ruby
 Capybara.configure do |config|
-    config.default_driver = :selenium #Firefox default driver
+    config.default_driver = :selenium #Firefox default driver, it's also possible to use  :selenium_chrome and :selenium_chrome_headless
     config.default_max_wait_time = 5 #implicit wait
     config.app_host = "http://the-internet.herokuapp.com"
 end
