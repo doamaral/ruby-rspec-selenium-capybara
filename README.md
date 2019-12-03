@@ -1,6 +1,6 @@
 # ruby-rspec-selenium-capybara
 
-Incrementing test project with Capybara. Although Capybara is not required to automate ui tests, it has a greate DSL that might boost our experience scripting automate tests.
+Incrementing test project with Capybara. Although Capybara is not required to automate ui tests, it has a great DSL that might boost our experience scripting automate tests.
 
 ## Initial project structure
 
