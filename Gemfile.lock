@@ -46,7 +46,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  capybara
+  capybara (~> 3.29)
   rspec (~> 3.9)
   selenium-webdriver (~> 3.142, >= 3.142.6)
 
